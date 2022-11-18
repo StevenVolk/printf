@@ -9,7 +9,7 @@
  * @list: arguements passed
  */
 
-int passing(const char *format, op_t t[], va_list list)
+int printing(const char *format, op_t t[], va_list list)
 {
 	int i, j, returned_count, count;
 

@@ -71,7 +71,6 @@ int _printf(const char *format, ...)
 	};
 	va_list list;
 
-	i = 0;
 	if (format == NULL)
 		return (-1);
 	va_start(list, format);

@@ -23,7 +23,7 @@ int print_string(va_list list)
 	int i;
 	char *pri;
 
-	pri = va_arg(list, char *);
+	pri = va_arg(list, char*);
 	if (pri == NULL)
 		pri = "(nill)";
 	for (i = 0; i != '\0'; i++)

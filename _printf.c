@@ -7,7 +7,7 @@
  * @list: what to be printed
  * Return: Always 1 for a character
  */
-print_char(va_list list)
+int print_char(va_list list)
 {
 	_putchar(va_arg(list, int));
 	return (1);
@@ -18,7 +18,7 @@ print_char(va_list list)
  * @list: what to be printed
  * Return: number of characters printed
  */
-print_string(va_list list)
+int print_string(va_list list)
 {
 	int i;
 	char *pri;
@@ -36,7 +36,7 @@ print_string(va_list list)
  * @list: what to be printed
  * Return: Always 1 for a percentage symbol
  */
-print_percent(__attribute__((unused)) va_list list)
+int print_percent(__attribute__((unused)) va_list list)
 {
 	_putchar('%');
 	return (1);

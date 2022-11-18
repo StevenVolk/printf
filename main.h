@@ -13,7 +13,7 @@
 typedef struct op
 {
 	char *op;
-	void (*f)(va_list item);
+	int (*f)(va_list item);
 } op_t;
 
 int _putchar(char c);

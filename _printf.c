@@ -4,11 +4,11 @@
 
 /**
  * printing - function to print
+ *
  * @format: String passed
  * @t: list of function calls
  * @list: arguements passed
  */
-
 int printing(const char *format, op_t t[], va_list list)
 {
 	int i, j, returned_count, count;

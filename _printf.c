@@ -16,12 +16,7 @@ int printing(const char *format, op_t t[], va_list list)
 	count = 0, i = 0, j = 0;
 	while (format[i] != '\0')
 	{
-		if (format[i] != '%')
-		{
-			_putchar(format[i]);
-			count++;
-		}
-		else
+		if (format[i] == '%')
 		{
 			while (t[j].op != NULL)
 			{
@@ -47,6 +42,11 @@ int printing(const char *format, op_t t[], va_list list)
 					return (-1);
 			}
 			i++;
+		}
+		else
+		{
+			_putchar(format[i]);
+			count++;
 		}
 		i++;
 	}

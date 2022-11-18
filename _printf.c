@@ -53,9 +53,9 @@ int _printf(const char *format, ...)
 	op_t t[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"%", print_percent},
+		{"%", print_percent}/**,
 		{"d", print_float},
-		{"i", print_int},
+		{"i", print_int},*/
 		{NULL, NULL}
 	};
 	va_list list;

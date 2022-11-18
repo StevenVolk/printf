@@ -19,6 +19,8 @@ int printing(const char *format, op_t t[], va_list list)
 				if (format[i + 1] == t[j].op[0])
 				{
 					_count = t[j].f(list);
+					if (_count == -1)
+						return (-1);
 					count += _count;
 					break;
 				}

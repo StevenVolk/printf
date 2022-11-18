@@ -8,6 +8,7 @@
  * @format: String passed
  * @t: list of function calls
  * @list: arguements passed
+ * Return: number of characters printed
  */
 int printing(const char *format, op_t t[], va_list list)
 {
@@ -64,9 +65,7 @@ int _printf(const char *format, ...)
 	op_t t[] = {
 		{"c", print_char},
 		{"s", print_string},
-		{"%", print_percent},/**
-		{"d", print_float},
-		{"i", print_int},*/
+		{"%", print_percent},
 		{NULL, NULL}
 	};
 	va_list list;

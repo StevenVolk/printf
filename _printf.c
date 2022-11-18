@@ -23,7 +23,7 @@ int printing(const char *format, op_t t[], va_list list)
 		}
 		else
 		{
-			while(t[j].op != NULL)
+			while (t[j].op != NULL)
 			{
 				if (format[i + 1] == t[j].op[0])
 				{
@@ -37,14 +37,14 @@ int printing(const char *format, op_t t[], va_list list)
 			}
 			if (t[j].op == NULL && format[i + 1] != ' ')
 			{
-				if (format[i + 1] == '\0')
-					return (-1);
-				else
+				if (format[i + 1] != '\0')
 				{
 					_putchar(format[i]);
 					_putchar(format[i + 1]);
 					count += 2;
 				}
+				else
+					return (-1);
 			}
 			i++;
 		}

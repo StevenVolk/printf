@@ -11,7 +11,7 @@
  */
 int printing(const char *format, op_t t[], va_list list)
 {
-	int i, j, returned_count, count;
+	int i, j, _count, count;
 
 	count = 0, i = 0, j = 0;
 	while (format[i] != '\0')
@@ -22,10 +22,10 @@ int printing(const char *format, op_t t[], va_list list)
 			{
 				if (format[i + 1] == t[j].op[0])
 				{
-					returned_count = t[j].f(list);
-					if (returned_count == -1)
+					_count = t[j].f(list);
+					if (_count == -1)
 						return (-1);
-					count += returned_count;
+					count += _count;
 					break;
 				}
 				j++;

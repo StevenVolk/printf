@@ -60,7 +60,7 @@ int printing(const char *format, op_t t[], va_list list)
  */
 int _printf(const char *format, ...)
 {
-	int count, i;
+	int count;
 	op_t t[] = {
 		{"c", print_char},
 		{"s", print_string},
@@ -75,7 +75,7 @@ int _printf(const char *format, ...)
 	if (format == NULL)
 		return (-1);
 	va_start(list, format);
-	printing(format, t, list);
+	count = printing(format, t, list);
 	va_end(list);
 	return (count);
 }

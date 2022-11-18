@@ -14,11 +14,12 @@ int printing(const char *format, op_t t[], va_list list)
 {
 	int i, j, _count, count;
 
-	count = 0, i = 0, j = 0;
+	count = 0, i = 0;
 	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
+			j = 0;
 			while (t[j].op != NULL)
 			{
 				if (format[i + 1] == t[j].op[0])

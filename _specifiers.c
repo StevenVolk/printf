@@ -24,6 +24,7 @@ int print_string(va_list list)
 	char *pri;
 
 	pri = va_arg(list, char*);
+	_putchar('o');
 	if (pri == NULL)
 		pri = "(nill)";
 	for (i = 0; i != '\0'; i++)

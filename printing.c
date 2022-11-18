@@ -25,7 +25,8 @@ int printing(const char *format, op_t t[], va_list list)
 			}
 			if (t[j].op == NULL && format[i + 1] != ' ' && format[i + 1] != '\0')
 			{
-				_putchar(format[i]), _putchar(format[i + 1]);
+				_putchar(format[i]);
+				_putchar(format[i + 1]);
 				count += 2;
 			}
 		}

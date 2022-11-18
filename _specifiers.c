@@ -7,9 +7,9 @@
  * @list: what to be printed
  * Return: Always 1 for a character
  */
-int print_char(va_list _list)
+int print_char(va_list list)
 {
-	_putchar(va_arg(_list, int));
+	_putchar(va_arg(list, int));
 	return (1);
 }
 
@@ -18,14 +18,14 @@ int print_char(va_list _list)
  * @list: what to be printed
  * Return: number of characters printed
  */
-int print_string(va_list _list)
+int print_string(va_list list)
 {
 	int i;
 	char *pri;
 
-	pri = va_arg(_list, char*);
+	pri = va_arg(list, char*);
 	if (pri == NULL)
-		pri = "(nill)";
+		pri = "(null)";
 	for (i = 0; pri[i] != '\0'; i++)
 		_putchar(pri[i]);
 	return (i);
@@ -36,7 +36,7 @@ int print_string(va_list _list)
  * @list: what to be printed
  * Return: Always 1 for a percentage symbol
  */
-int print_percent(__attribute__((unused)) va_list _list)
+int print_percent(__attribute__((unused)) va_list list)
 {
 	_putchar('%');
 	return (1);

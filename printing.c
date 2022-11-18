@@ -33,7 +33,8 @@ int printing(const char *format, op_t t[], va_list list)
 					_putchar(format[i + 1]);
 					count += 2;
 				}
-				else {return (-1);}
+				else
+					return (-1);
 			}
 			i++;
 		}

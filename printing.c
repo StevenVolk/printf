@@ -1,10 +1,6 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdarg.h>
-
 /**
  * printing - function to print
- *
  * @format: String passed
  * @t: list of function calls
  * @list: arguements passed

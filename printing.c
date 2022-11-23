@@ -48,12 +48,13 @@ int printing(const char *format, op_t t[], va_list list)
 }
 
 /**
- * printing_ints:
+ * printing_ints -  prints integers
+ * @list: arguement passed
  */
 int printing_ints(va_list list)
 {
 	int i, j;
-	unsigned int k;
+	int k;
 
 	k = va_arg(list, int);
 	i = 0;

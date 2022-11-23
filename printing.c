@@ -65,7 +65,7 @@ int printing_ints(va_list list)
 		k *= -1 * nm;
 	}
 	else
-		k = n;
+		k = nm;
 	
 	while (k / j > 9)
 	{

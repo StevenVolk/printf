@@ -53,17 +53,19 @@ int printing(const char *format, op_t t[], va_list list)
  */
 int printing_ints(va_list list)
 {
-	int i, j;
-	int k;
+	int i, j, nm;
+	unsigned int k;
 
-	k = va_arg(list, int);
+	nm = va_arg(list, int);
 	i = 0;
 	j = 1;
-	if (k < 0)
+	if (nm < 0)
 	{
 		i += _putchar('-');
-		k *= -1;
+		k *= -1 * nm;
 	}
+	else
+		k = n;
 	
 	while (k / j > 9)
 	{

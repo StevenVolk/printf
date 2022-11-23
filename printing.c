@@ -50,7 +50,7 @@ int printing(const char *format, op_t t[], va_list list)
 /**
  * printing_ints:
  */
-int printing_ints(int list)
+int printing_ints(va_list list)
 {
 	int i, j;
 	unsigned int k;

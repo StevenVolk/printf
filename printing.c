@@ -46,3 +46,34 @@ int printing(const char *format, op_t t[], va_list list)
 	}
 	return (count);
 }
+
+/**
+ * printing_ints:
+ */
+int printing_ints(int list)
+{
+	int i, j;
+	unsigned int k;
+
+	k = va_arg(list, int);
+	i = 0;
+	j = 1;
+	if (k < 0)
+	{
+		i += _putchar('-');
+		k *= -1;
+	}
+	
+	while (k / j > 9)
+	{
+		j *= 10;
+	}
+
+	while (j != 0)
+	{
+		i += _putchar('0' + k / j);
+		k %= j;
+		j /= 10;
+	}
+	return (i);
+}

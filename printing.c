@@ -62,7 +62,7 @@ int printing_ints(va_list list)
 	if (nm < 0)
 	{
 		i += _putchar('-');
-		k *= -1 * nm;
+		k = -1 * nm;
 	}
 	else
 		k = nm;

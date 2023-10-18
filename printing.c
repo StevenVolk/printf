@@ -48,8 +48,9 @@ int printing(const char *format, op_t t[], va_list list)
 }
 
 /**
- * printing_ints -  prints integers
+ * printing_ints - prints integers
  * @list: arguement passed
+ * Return: prints integers
  */
 int printing_ints(va_list list)
 {

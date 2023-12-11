@@ -67,7 +67,7 @@ int printing_ints(va_list list)
 	}
 	else
 		k = nm;
-	
+
 	while (k / j > 9)
 	{
 		j *= 10;
